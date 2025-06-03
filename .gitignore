@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+instance/
+.env
+venv/
+.envrc
+.Python
+.pytest_cache/
+
+# MongoDB dumps (if any)
+*.bson
+*.dump
+
+# Neo4j local files (logs, import)
+neo4j/logs/
+neo4j/import/
+
+# Angular
+/node_modules/
+/dist/
+/out-tsc/
+/coverage/
+.angular/cache/
+.angular/build/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
