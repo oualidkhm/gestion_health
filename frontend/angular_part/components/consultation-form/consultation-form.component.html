@@ -1,0 +1,29 @@
+<form (ngSubmit)="submit()" class="consult-form">
+  <h2>Détails de la Consultation</h2>
+
+  <label for="date">Date de la Consultation</label>
+  <input id="date" type="datetime-local" [(ngModel)]="consult.date" name="date" required class="input-field" />
+
+  <label for="description">Description / Observations</label>
+  <textarea id="description" [(ngModel)]="consult.description" name="description" rows="4" placeholder="Détails sur l’état du patient..." required class="input-field textarea-field"></textarea>
+
+  <fieldset class="participant-info">
+    <legend>Informations Patient</legend>
+    <label for="patient_id">ID Patient</label>
+    <input id="patient_id" [(ngModel)]="consult.patient_id" name="patient_id" placeholder="ID Patient" required class="input-field" />
+
+    <label for="patient_name">Nom Patient</label>
+    <input id="patient_name" [(ngModel)]="consult.patient_name" name="patient_name" placeholder="Nom complet" required class="input-field" />
+  </fieldset>
+
+  <fieldset class="participant-info">
+    <legend>Informations Médecin</legend>
+    <label for="medecin_id">ID Médecin</label>
+    <input id="medecin_id" [(ngModel)]="consult.medecin_id" name="medecin_id" placeholder="ID Médecin" required class="input-field" />
+
+    <label for="medecin_name">Nom Médecin</label>
+    <input id="medecin_name" [(ngModel)]="consult.medecin_name" name="medecin_name" placeholder="Nom complet" required class="input-field" />
+  </fieldset>
+
+  <button type="submit" class="btn-submit">Enregistrer la Consultation</button>
+</form>

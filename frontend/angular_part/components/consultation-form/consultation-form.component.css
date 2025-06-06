@@ -1,0 +1,80 @@
+.consult-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #e8f0fe;
+  padding: 30px 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 64, 128, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #003366;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.consult-form h2 {
+  color: #004080;
+  border-bottom: 3px solid #4caf50;
+  padding-bottom: 0.4rem;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px #a0d6b4;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.input-field {
+  padding: 12px 15px;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  border-color: #2a5d84;
+  outline: none;
+  box-shadow: 0 0 10px #4caf50aa;
+}
+
+.textarea-field {
+  resize: vertical;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.participant-info {
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  padding: 15px 20px;
+  background: #dff5e1;
+}
+
+.participant-info legend {
+  font-weight: 700;
+  color: #2a5d84;
+  padding: 0 8px;
+  font-size: 1.1rem;
+}
+
+.btn-submit {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-weight: 700;
+  border-radius: 35px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 15px #388e3ccc;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}

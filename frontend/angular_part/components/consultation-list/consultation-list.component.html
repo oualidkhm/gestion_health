@@ -1,0 +1,13 @@
+<h2>Liste des Consultations</h2>
+<ul class="consult-list">
+  <li *ngFor="let c of consults" class="consult-item">
+    <div class="consult-info">
+      <span class="date">{{ c.date }}</span> - 
+      <span class="desc">{{ c.description }}</span>
+      <div class="details">
+        Patient: {{ c.patient_id }}, Médecin: {{ c.medecin_id }}
+      </div>
+    </div>
+    <button class="btn-delete" (click)="delete(c._id)">Supprimer</button>
+  </li>
+</ul>

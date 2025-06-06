@@ -1,0 +1,15 @@
+<div *ngFor="let consult of consultations">
+  <h3>Consultation {{ consult.consultation_id }}</h3>
+
+  <p><strong>Date:</strong> {{ consult.date }}</p>
+  <p><strong>Description:</strong> {{ consult.description }}</p>
+
+  <h4>Patient</h4>
+  <p>ID: {{ consult.patient_id }}</p>
+  <p>Nom: {{ consult.patient_name }}</p>
+
+  <h4>Médecin</h4>
+  <p>ID: {{ consult.medecin_id }}</p>
+  <p>Nom: {{ consult.medecin_name }}</p>
+  <hr />
+</div>

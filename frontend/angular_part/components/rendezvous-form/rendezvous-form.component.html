@@ -1,0 +1,9 @@
+<h2>Créer un Rendez-vous</h2>
+<form (ngSubmit)="submit()">
+  <input [(ngModel)]="rdv.date" name="date" type="date" required />
+  <input [(ngModel)]="rdv.time" name="time" type="time" required />
+  <input [(ngModel)]="rdv.statut" name="statut" placeholder="Statut" required />
+  <input [(ngModel)]="rdv.patient_id" name="patient_id" placeholder="Patient ID" required />
+  <input [(ngModel)]="rdv.medecin_id" name="medecin_id" placeholder="Médecin ID" required />
+  <button type="submit">Créer</button>
+</form>

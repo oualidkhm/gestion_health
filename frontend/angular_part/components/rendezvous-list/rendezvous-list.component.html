@@ -1,0 +1,9 @@
+<h2>Liste des Rendez-vous</h2>
+<ul class="rdv-list">
+  <li *ngFor="let rdv of rdvs" class="rdv-item">
+    <span class="rdv-info">
+      {{ rdv.date }} - {{ rdv.statut }} (Patient: {{ rdv.patient_id }}, Médecin: {{ rdv.medecin_id }})
+    </span>
+    <button (click)="delete(rdv._id)" class="btn-delete">Supprimer</button>
+  </li>
+</ul>
