@@ -1,0 +1,32 @@
+<div class="form-container">
+  <h2>Inscription</h2>
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
+    <label>Nom *</label>
+    <input type="text" [(ngModel)]="nom" name="nom" placeholder="Nom" required />
+
+    <label>Prénom *</label>
+    <input type="text" [(ngModel)]="prenom" name="prenom" placeholder="Prénom" required />
+
+    <label>Email *</label>
+    <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required />
+
+    <label>Mot de passe *</label>
+    <input type="password" [(ngModel)]="motDePasse" name="motDePasse" placeholder="Mot de passe" required />
+
+    <label>Confirmer le mot de passe *</label>
+    <input type="password" [(ngModel)]="confirmMotDePasse" name="confirmMotDePasse" placeholder="Ressaisir votre mot de passe" required />
+
+    <label>Rôle *</label>
+    <div>
+      <label><input type="radio" name="role" [(ngModel)]="role" value="patient" required /> Patient</label>
+      <label><input type="radio" name="role" [(ngModel)]="role" value="medecin" required /> Médecin</label>
+      <label><input type="radio" name="role" [(ngModel)]="role" value="admin" required /> Admin</label>
+    </div>
+
+    <button type="submit">S'inscrire</button>
+
+    <div *ngIf="erreur" class="erreur">{{ erreur }}</div>
+  </form>
+
+  <p>Déjà inscrit ? <a (click)="goToLogin()">Se connecter</a></p>
+</div>

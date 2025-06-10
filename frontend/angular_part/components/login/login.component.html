@@ -1,0 +1,16 @@
+<div class="form-container">
+  <h2>Connexion</h2>
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
+    <label>Email *</label>
+    <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required />
+
+    <label>Mot de passe *</label>
+    <input type="password" [(ngModel)]="motDePasse" name="motDePasse" placeholder="Mot de passe" required />
+
+    <button type="submit">Se connecter</button>
+
+    <div *ngIf="erreur" class="erreur">{{ erreur }}</div>
+  </form>
+
+  <p>Pas de compte ? <a (click)="goToRegister()">S'inscrire</a></p>
+</div>

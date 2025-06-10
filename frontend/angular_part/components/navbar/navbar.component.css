@@ -1,0 +1,22 @@
+.navbar {
+  background-color: #007acc;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; 
+  gap: 50px; /* Change ce nombre pour ajuster l’espacement entre les liens */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 20px; /* Change ce nombre pour ajuster l’espacement */
+  font-weight: bold;
+  font-size: 24px; /* Change ce nombre pour ajuster la taille de la police */
+}
+
+.navbar a.active {
+  text-decoration: underline;
+}

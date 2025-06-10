@@ -1,0 +1,27 @@
+<h2>Liste des utilisateurs</h2>
+<table class="user-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Email</th>
+      <th>Mot de passe</th>
+      <th>Rôle</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of utilisateurs; let i = index">
+      <td>{{ user.user_id }}</td>
+      <td>{{ user.nom }}</td>
+      <td>{{ user.prenom }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.motDePasse }}</td>
+      <td>{{ user.role }}</td>
+      <td>
+        <button (click)="supprimerUtilisateur(i)">Supprimer</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
